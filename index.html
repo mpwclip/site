@@ -115,6 +115,18 @@
   .clip-item figcaption small { color: var(--muted); font-size: 13px; }
 
   /* Liste */
+  .solution { margin-top: 20px; border: 1px solid var(--accent); background: var(--surface); padding: 36px 32px; position: relative; overflow: hidden; }
+  .solution::before { content: ""; position: absolute; inset: 0; background: radial-gradient(520px 260px at 0% 0%, rgba(182,255,60,0.13), transparent 70%); pointer-events: none; }
+  .solution > * { position: relative; }
+  .solution h3 { font-size: clamp(24px, 3.4vw, 36px); margin-bottom: 14px; max-width: 760px; }
+  .solution h3 em { font-style: normal; color: var(--accent); }
+  .solution p { color: var(--muted); max-width: 760px; }
+  .solution p strong { color: var(--text); font-weight: 600; }
+  .solution-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
+  .solution-points div { border: 1px solid var(--line); background: var(--bg); padding: 16px 18px; }
+  .solution-points b { display: block; font-family: "Space Grotesk", sans-serif; font-size: 20px; color: var(--accent); line-height: 1.2; }
+  .solution-points span { display: block; color: var(--muted); font-size: 14px; margin-top: 4px; }
+  @media (max-width: 760px) { .solution { padding: 26px 20px; } .solution-points { grid-template-columns: 1fr; } }
   .checks { list-style: none; display: grid; gap: 14px; margin-top: 8px; }
   .checks li { display: flex; gap: 12px; color: var(--muted); font-size: 16px; }
   .checks li::before { content: "✓"; color: var(--accent); font-weight: 700; flex: none; }
@@ -217,7 +229,7 @@
         <div class="card">
           <div class="num">2</div>
           <h3>On crée ton identité</h3>
-          <p>Sous-titres, cadrage, rythme, accroches : une direction artistique pensée pour toi, reconnaissable dès la première image.</p>
+          <p>Cadrage, titres, musique, rythme : une direction artistique pensée pour toi, reconnaissable dès la première image.</p>
         </div>
         <div class="card">
           <div class="num">3</div>
@@ -299,7 +311,7 @@
           <h3>Ce qu'on prend en charge</h3>
           <ul class="checks">
             <li><span><strong>Repérage des moments forts</strong> sur tous tes lives et vidéos.</span></li>
-            <li><span><strong>Montage complet</strong> : cadrage vertical, sous-titres, accroche.</span></li>
+            <li><span><strong>Montage complet</strong> : cadrage vertical, titre choc, musique et effets.</span></li>
             <li><span><strong>Création et gestion des comptes</strong> de clips à ton nom.</span></li>
             <li><span><strong>Publication quotidienne</strong>, au volume que tu veux.</span></li>
             <li><span><strong>Suivi des performances</strong> et ajustement des formats.</span></li>
@@ -313,6 +325,16 @@
             <li><span>Tu veux <strong>plus de viewers en live</strong> et plus d'abonnés.</span></li>
             <li><span>Tu veux garder la main : <strong>rien n'est publié sans ton accord</strong> sur la ligne éditoriale.</span></li>
           </ul>
+        </div>
+      </div>
+      <div class="solution">
+        <div class="eyebrow">La solution MPW Clips</div>
+        <h3>On ne mise pas sur un clip. <em>On en poste des centaines.</em></h3>
+        <p>Attendre qu'un Reel perce pour qu'on te découvre, c'est jouer à la loterie. Notre méthode, c'est <strong>le volume</strong> : tes meilleurs moments publiés <strong>tous les jours, à haute fréquence</strong>, sur des <strong>dizaines de comptes dédiés</strong>, et jusqu'à plusieurs centaines. Chaque clip est une porte d'entrée vers ton live. Plus il y en a, plus il y a de monde qui arrive.</p>
+        <div class="solution-points">
+          <div><b>Des dizaines de comptes</b><span>Jusqu'à plusieurs centaines, tous dédiés à ton contenu.</span></div>
+          <div><b>Tous les jours</b><span>Une publication à haute fréquence, sans pause.</span></div>
+          <div><b>La masse, pas la chance</b><span>On n'attend pas le clip miracle, on occupe le terrain.</span></div>
         </div>
       </div>
     </div>
