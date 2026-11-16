@@ -101,6 +101,7 @@
     .panel, .kpi { padding: 16px; }
     .seg button { padding: 8px 10px; }
   }
+  .embed header { display: none; }
 </style>
 </head>
 <body>
@@ -174,6 +175,7 @@
 
 <footer><div class="wrap">MPW Clips · Les vues et abonnés proviennent des plateformes, les clics des liens placés en bio.</div></footer>
 
+<script>if (/[?&]embed=1/.test(location.search)) { document.documentElement.classList.add("embed"); }</script>
 <script src="demo-data.js"></script>
 <script>
 (function () {
