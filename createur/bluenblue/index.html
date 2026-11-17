@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <style>
-  .p-item .dl { display: inline-block; margin-top: 8px; font-size: 14px; color: var(--accent); text-decoration: none; font-weight: 600; }
-  .p-item .dl:hover { text-decoration: underline; }
+  .p-item .frame { position: relative; }
+  .p-item .apercu { position: absolute; top: 10px; left: 10px; padding: 3px 8px; border-radius: 4px; background: rgba(0,0,0,.6); color: #fff; font-size: 12px; font-weight: 600; pointer-events: none; }
 </style>
 </head>
 <body>
@@ -38,19 +38,19 @@
     <div class="wrap">
       <div class="eyebrow">Pour bluenblue</div>
       <h1>Tes clips, <em>déjà montés</em>.</h1>
-      <p>5 clips verticaux tirés de tes lives, prêts pour TikTok, YouTube Shorts et Instagram Reels. Ils sont à toi : télécharge-les et poste-les si tu veux.</p>
-      <a href="#contact" class="btn btn-primary">On essaie 7 jours gratuits ?</a>
+      <p>5 clips verticaux tirés de tes lives, prêts pour TikTok, YouTube Shorts et Instagram Reels. Regarde-les ici. Réponds-moi (mail, WhatsApp ou Discord) et je t'envoie les fichiers en qualité originale : ils sont à toi, tu pourras les poster.</p>
+      <a href="#contact" class="btn btn-primary">Récupérer mes clips</a>
     </div>
   </section>
 
   <section id="clips" style="padding-top: 40px;">
     <div class="wrap">
       <div class="p-grid">
-        <figure class="p-item"><div class="frame"><video src="clip_1_conseils.mp4" poster="clip_1_conseils.jpg" controls playsinline preload="none"></video></div><figcaption><b>SES CONSEILS TWITCH</b><small>Streamer ne suffit plus · 27 s</small><a class="dl" href="clip_1_conseils.mp4" download>Télécharger</a></figcaption></figure>
-        <figure class="p-item"><div class="frame"><video src="clip_2_kills.mp4" poster="clip_2_kills.jpg" controls playsinline preload="none"></video></div><figcaption><b>JE FAIS 2 KILLS</b><small>Tout dans la tête ?! · 21 s</small><a class="dl" href="clip_2_kills.mp4" download>Télécharger</a></figcaption></figure>
-        <figure class="p-item"><div class="frame"><video src="clip_3_photo.mp4" poster="clip_3_photo.jpg" controls playsinline preload="none"></video></div><figcaption><b>IL DEMANDE UNE PHOTO</b><small>C&#x27;est quoi nos pseudos ? · 32 s</small><a class="dl" href="clip_3_photo.mp4" download>Télécharger</a></figcaption></figure>
-        <figure class="p-item"><div class="frame"><video src="clip_4_reve.mp4" poster="clip_4_reve.jpg" controls playsinline preload="none"></video></div><figcaption><b>C&#x27;EST QUOI TON RÊVE ?</b><small>La référence valorant · 22 s</small><a class="dl" href="clip_4_reve.mp4" download>Télécharger</a></figcaption></figure>
-        <figure class="p-item"><div class="frame"><video src="clip_5_front.mp4" poster="clip_5_front.jpg" controls playsinline preload="none"></video></div><figcaption><b>RETOUR SUR VALORANT</b><small>Le chat clashe son front · 29 s</small><a class="dl" href="clip_5_front.mp4" download>Télécharger</a></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_1_conseils.mp4" poster="clip_1_conseils.jpg" controls controlslist="nodownload noremoteplayback noplaybackrate" disablepictureinpicture playsinline preload="none"></video><span class="apercu">Aperçu · MPW Clips</span></div><figcaption><b>SES CONSEILS TWITCH</b><small>Streamer ne suffit plus · 27 s</small></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_2_kills.mp4" poster="clip_2_kills.jpg" controls controlslist="nodownload noremoteplayback noplaybackrate" disablepictureinpicture playsinline preload="none"></video><span class="apercu">Aperçu · MPW Clips</span></div><figcaption><b>JE FAIS 2 KILLS</b><small>Tout dans la tête ?! · 21 s</small></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_3_photo.mp4" poster="clip_3_photo.jpg" controls controlslist="nodownload noremoteplayback noplaybackrate" disablepictureinpicture playsinline preload="none"></video><span class="apercu">Aperçu · MPW Clips</span></div><figcaption><b>IL DEMANDE UNE PHOTO</b><small>C&#x27;est quoi nos pseudos ? · 32 s</small></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_4_reve.mp4" poster="clip_4_reve.jpg" controls controlslist="nodownload noremoteplayback noplaybackrate" disablepictureinpicture playsinline preload="none"></video><span class="apercu">Aperçu · MPW Clips</span></div><figcaption><b>C&#x27;EST QUOI TON RÊVE ?</b><small>La référence valorant · 22 s</small></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_5_front.mp4" poster="clip_5_front.jpg" controls controlslist="nodownload noremoteplayback noplaybackrate" disablepictureinpicture playsinline preload="none"></video><span class="apercu">Aperçu · MPW Clips</span></div><figcaption><b>RETOUR SUR VALORANT</b><small>Le chat clashe son front · 29 s</small></figcaption></figure>
       </div>
       <p class="p-note">Page privée, préparée pour bluenblue par MPW Clips. Elle n'apparaît pas sur les moteurs de recherche.</p>
     </div>
@@ -60,8 +60,8 @@
     <div class="wrap">
       <div class="final">
         <div class="eyebrow">Essai gratuit</div>
-        <h2>Des clips comme ça, tous les jours</h2>
-        <p class="lead">Pendant 7 jours, on sort des clips de tes lives chaque jour. Tu vois ce que ça donne, et tu décides après. Réponds simplement au mail, ou écris-nous.</p>
+        <h2>Tes clips t'attendent</h2>
+        <p class="lead">Écris-moi par mail, WhatsApp ou Discord : je t'envoie ces clips, et si tu veux, on en fait tous les jours pendant 7 jours gratuitement. Tu décides après.</p>
         <div class="cta-row">
           <a href="mailto:maxime@mpwclip.com?subject=Essai%20gratuit%20bluenblue" class="btn btn-primary">Mail : maxime@mpwclip.com</a>
           <a href="https://wa.me/33677703275?text=Salut%20Maxime%2C%20c%27est%20bluenblue%20%28page%20MPW%20Clips%29" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
@@ -82,6 +82,7 @@
 </footer>
 
 <script>
+  document.addEventListener('contextmenu', function (e) { if (e.target.tagName === 'VIDEO') e.preventDefault(); });
   document.addEventListener('play', function (e) {
     document.querySelectorAll('video').forEach(function (v) { if (v !== e.target) v.pause(); });
   }, true);
