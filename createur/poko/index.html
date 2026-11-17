@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <style>
+  button.btn { border: 0; font: inherit; cursor: pointer; }
   .p-item .frame { position: relative; }
   .p-item .apercu { position: absolute; top: 10px; left: 10px; padding: 3px 8px; border-radius: 4px; background: rgba(0,0,0,.6); color: #fff; font-size: 12px; font-weight: 600; pointer-events: none; }
 </style>
@@ -18,18 +19,7 @@
 
 <header>
   <div class="wrap nav">
-    <a href="/" class="brand">MPW<span>Clips</span></a>
-    <div class="nav-right">
-      <a href="#contact" class="btn btn-primary btn-small nav-cta-mobile">Essai gratuit</a>
-      <button type="button" class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span></button>
-    </div>
-    <nav class="nav-links" id="menu">
-      <a href="/#methode">Méthode</a>
-      <a href="/portfolio/">Portfolio</a>
-      <a href="/suivi/">Suivi</a>
-      <a href="/#offre">Offre</a>
-      <a href="#contact" class="btn btn-primary btn-small">Essai gratuit</a>
-    </nav>
+    <span class="brand">MPW<span>Clips</span></span>
   </div>
 </header>
 
@@ -59,16 +49,15 @@
   <section id="contact">
     <div class="wrap">
       <div class="final">
-        <div class="eyebrow">Essai gratuit</div>
+        <div class="eyebrow">Récupère tes clips</div>
         <h2>Tes clips t'attendent</h2>
-        <p class="lead">Écris-moi par mail, WhatsApp ou Discord : je t'envoie ces clips, et si tu veux, on en fait tous les jours pendant 7 jours gratuitement. Tu décides après.</p>
+        <p class="lead">Prends contact avec moi pour récupérer tes clips et que je devienne ton clipper, gratuitement.</p>
         <div class="cta-row">
           <a href="mailto:maxime@mpwclip.com?subject=Essai%20gratuit%20poko" class="btn btn-primary">Mail : maxime@mpwclip.com</a>
           <a href="https://wa.me/33677703275?text=Salut%20Maxime%2C%20c%27est%20poko%20%28page%20MPW%20Clips%29" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
           <button type="button" class="btn btn-primary" id="discord" data-pseudo="mpw001">Discord : mpw001</button>
         </div>
         <p class="p-note" id="discord-ok" style="text-align:center;min-height:1.4em"></p>
-        <p style="text-align:center;margin-top:8px"><a href="/" class="btn btn-ghost">Voir l'offre complète</a></p>
       </div>
     </div>
   </section>
@@ -94,6 +83,5 @@
     else ok.textContent = 'Ajoute « ' + p + ' » en ami sur Discord.';
   });
 </script>
-<script src="/site.js"></script>
 </body>
 </html>
