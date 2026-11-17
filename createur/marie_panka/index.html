@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tes clips, marie_panka — MPW Clips</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<style>
+  .p-item .dl { display: inline-block; margin-top: 8px; font-size: 14px; color: var(--accent); text-decoration: none; font-weight: 600; }
+  .p-item .dl:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand">MPW<span>Clips</span></a>
+    <div class="nav-right">
+      <a href="#contact" class="btn btn-primary btn-small nav-cta-mobile">Essai gratuit</a>
+      <button type="button" class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    </div>
+    <nav class="nav-links" id="menu">
+      <a href="/#methode">Méthode</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a href="/suivi/">Suivi</a>
+      <a href="/#offre">Offre</a>
+      <a href="#contact" class="btn btn-primary btn-small">Essai gratuit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="p-hero">
+    <div class="wrap">
+      <div class="eyebrow">Pour marie_panka</div>
+      <h1>Tes clips, <em>déjà montés</em>.</h1>
+      <p>5 clips verticaux tirés de tes lives, prêts pour TikTok, YouTube Shorts et Instagram Reels. Ils sont à toi : télécharge-les et poste-les si tu veux.</p>
+      <a href="#contact" class="btn btn-primary">On essaie 7 jours gratuits ?</a>
+    </div>
+  </section>
+
+  <section id="clips" style="padding-top: 40px;">
+    <div class="wrap">
+      <div class="p-grid">
+        <figure class="p-item"><div class="frame"><video src="clip_1_carlin.mp4" poster="clip_1_carlin.jpg" controls playsinline preload="none"></video></div><figcaption><b>ELLE CHERCHE SES LUNETTES</b><small>Et frappe un chien ?! · 22 s</small><a class="dl" href="clip_1_carlin.mp4" download>Télécharger</a></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_2_puma.mp4" poster="clip_2_puma.jpg" controls playsinline preload="none"></video></div><figcaption><b>UN PUMA SUR LA COLLINE</b><small>Il va m&#x27;attaquer ?! · 22 s</small><a class="dl" href="clip_2_puma.mp4" download>Télécharger</a></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_3_poursuite.mp4" poster="clip_3_poursuite.jpg" controls playsinline preload="none"></video></div><figcaption><b>COURSE-POURSUITE DANS GTA</b><small>Elle n&#x27;arrête pas de rire · 35 s</small><a class="dl" href="clip_3_poursuite.mp4" download>Télécharger</a></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_4_accident.mp4" poster="clip_4_accident.jpg" controls playsinline preload="none"></video></div><figcaption><b>ACCIDENT, FUITE À PIED</b><small>Et vous êtes mort ?! · 23 s</small><a class="dl" href="clip_4_accident.mp4" download>Télécharger</a></figcaption></figure>
+        <figure class="p-item"><div class="frame"><video src="clip_5_loupgarou.mp4" poster="clip_5_loupgarou.jpg" controls playsinline preload="none"></video></div><figcaption><b>FACE AU LOUP-GAROU</b><small>Balles en argent ou pas ?! · 33 s</small><a class="dl" href="clip_5_loupgarou.mp4" download>Télécharger</a></figcaption></figure>
+      </div>
+      <p class="p-note">Page privée, préparée pour marie_panka par MPW Clips. Elle n'apparaît pas sur les moteurs de recherche.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="final">
+        <div class="eyebrow">Essai gratuit</div>
+        <h2>Des clips comme ça, tous les jours</h2>
+        <p class="lead">Pendant 7 jours, on sort des clips de tes lives chaque jour. Tu vois ce que ça donne, et tu décides après. Réponds simplement au mail, ou écris-nous.</p>
+        <div class="cta-row">
+          <a href="mailto:maxime@mpwclip.com?subject=Essai%20gratuit%20marie_panka" class="btn btn-primary">Mail : maxime@mpwclip.com</a>
+          <a href="https://wa.me/33677703275?text=Salut%20Maxime%2C%20c%27est%20marie_panka%20%28page%20MPW%20Clips%29" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+          <button type="button" class="btn btn-primary" id="discord" data-pseudo="mpw001">Discord : mpw001</button>
+        </div>
+        <p class="p-note" id="discord-ok" style="text-align:center;min-height:1.4em"></p>
+        <p style="text-align:center;margin-top:8px"><a href="/" class="btn btn-ghost">Voir l'offre complète</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y">2026</span> MPW Clips</span>
+    <span>Agence de clipping pour streamers gaming</span>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('play', function (e) {
+    document.querySelectorAll('video').forEach(function (v) { if (v !== e.target) v.pause(); });
+  }, true);
+  // Discord : copie le pseudo (on ne peut pas ouvrir une conversation par lien avec un simple pseudo).
+  document.getElementById('discord').addEventListener('click', function () {
+    var p = this.dataset.pseudo, ok = document.getElementById('discord-ok');
+    var dire = function () { ok.textContent = 'Pseudo « ' + p + ' » copié : ajoute-le en ami sur Discord.'; };
+    if (navigator.clipboard) navigator.clipboard.writeText(p).then(dire, function () { ok.textContent = 'Ajoute « ' + p + ' » en ami sur Discord.'; });
+    else ok.textContent = 'Ajoute « ' + p + ' » en ami sur Discord.';
+  });
+</script>
+<script src="/site.js"></script>
+</body>
+</html>
