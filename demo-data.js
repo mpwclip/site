@@ -1,5 +1,5 @@
 /*
-  DONNÉES DE DÉMONSTRATION — MPW Clips
+  DONNÉES DE DÉMONSTRATION, MPW Clips
   -------------------------------------
   Ce fichier fabrique des chiffres fictifs pour faire fonctionner le tableau de bord
   tant que les API ne sont pas branchées.
