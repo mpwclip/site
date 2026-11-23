@@ -14,6 +14,20 @@
 
 <link rel="canonical" href="https://mpwclip.com/">
 <link rel="stylesheet" href="/site.css">
+<style>
+  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; margin-bottom: 20px; }
+  .plan { background: var(--surface); border: 1px solid var(--line); padding: 28px; display: flex; flex-direction: column; position: relative; }
+  .plan.star { border-color: var(--accent); }
+  .plan .tag { position: absolute; top: -12px; left: 28px; background: var(--accent); color: var(--accent-ink); font: 700 12px/1 Inter, sans-serif; padding: 5px 8px; letter-spacing: .04em; text-transform: uppercase; }
+  .plan h3 { font-size: 22px; margin-bottom: 6px; }
+  .plan .price { font-family: "Space Grotesk", sans-serif; font-size: 44px; font-weight: 700; line-height: 1; margin: 10px 0 4px; }
+  .plan .price small { font-size: 16px; color: var(--muted); font-weight: 500; }
+  .plan .qty { color: var(--accent); font-weight: 600; margin-bottom: 16px; }
+  .plan .checks { margin-bottom: 22px; }
+  .plan .btn { margin-top: auto; text-align: center; }
+  .plans-note { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+  @media (max-width: 860px) { .plans { grid-template-columns: 1fr; gap: 26px; } }
+</style>
 </head>
 <body>
 
@@ -135,14 +149,56 @@
           </ul>
         </div>
       </div>
+      <div id="offres">
+        <h3 style="font-size:clamp(24px,3.4vw,36px);margin:56px 0 8px;">Nos 3 offres</h3>
+        <p class="plans-note">Sans engagement, tu arrêtes quand tu veux. Essai gratuit de 7 jours avant de choisir.</p>
+        <div class="plans">
+          <div class="plan">
+            <h3>Starter</h3>
+            <div class="price">50 €<small> / mois</small></div>
+            <div class="qty">1 clip par jour · environ 30 clips par mois</div>
+            <ul class="checks">
+              <li><span>Repérage des moments dans tes lives</span></li>
+              <li><span>Montage complet : sous-titres, titre, gros mots bipés</span></li>
+              <li><span>Posté sur TikTok, YouTube Shorts et Instagram Reels</span></li>
+              <li><span>Ton pseudo et ta chaîne sur chaque clip</span></li>
+            </ul>
+            <a href="mailto:contact@mpwclip.com?subject=Essai%20gratuit%20-%20offre%20Starter" class="btn btn-ghost">Commencer l'essai gratuit</a>
+          </div>
+          <div class="plan star"><span class="tag">Recommandé</span>
+            <h3>Régulier</h3>
+            <div class="price">90 €<small> / mois</small></div>
+            <div class="qty">2 clips par jour · environ 60 clips par mois</div>
+            <ul class="checks">
+              <li><span>Repérage des moments dans tes lives</span></li>
+              <li><span>Montage complet : sous-titres, titre, gros mots bipés</span></li>
+              <li><span>Posté sur TikTok, YouTube Shorts et Instagram Reels</span></li>
+              <li><span>Ton pseudo et ta chaîne sur chaque clip</span></li>
+            </ul>
+            <a href="mailto:contact@mpwclip.com?subject=Essai%20gratuit%20-%20offre%20Régulier" class="btn btn-primary">Commencer l'essai gratuit</a>
+          </div>
+          <div class="plan">
+            <h3>Intensif</h3>
+            <div class="price">120 €<small> / mois</small></div>
+            <div class="qty">3 clips par jour · environ 90 clips par mois</div>
+            <ul class="checks">
+              <li><span>Repérage des moments dans tes lives</span></li>
+              <li><span>Montage complet : sous-titres, titre, gros mots bipés</span></li>
+              <li><span>Posté sur TikTok, YouTube Shorts et Instagram Reels</span></li>
+              <li><span>Ton pseudo et ta chaîne sur chaque clip</span></li>
+            </ul>
+            <a href="mailto:contact@mpwclip.com?subject=Essai%20gratuit%20-%20offre%20Intensif" class="btn btn-ghost">Commencer l'essai gratuit</a>
+          </div>
+        </div>
+      </div>
       <div class="solution">
         <div class="eyebrow">La solution MPW Clips</div>
-        <h3>On ne mise pas sur un clip. <em>On en poste des centaines.</em></h3>
-        <p>Attendre qu'un Reel perce pour qu'on te découvre, c'est jouer à la loterie. Notre méthode, c'est <strong>le volume</strong> : tes meilleurs moments publiés <strong>tous les jours, à haute fréquence</strong>, sur des <strong>dizaines de comptes dédiés</strong>, et jusqu'à plusieurs centaines. Chaque clip est une porte d'entrée vers ton live. Plus il y en a, plus il y a de monde qui arrive.</p>
+        <h3>On ne mise pas sur un clip. <em>On mise sur la régularité.</em></h3>
+        <p>Attendre qu'un Reel perce pour qu'on te découvre, c'est jouer à la loterie. Notre méthode : tes meilleurs moments publiés <strong>tous les jours</strong>, sur des <strong>comptes dédiés à ton contenu</strong>. Chaque clip est une porte d'entrée vers ton live. Plus il y en a, plus il y a de monde qui arrive.</p>
         <div class="solution-points">
-          <div><b>Des dizaines de comptes</b><span>Jusqu'à plusieurs centaines, tous dédiés à ton contenu.</span></div>
-          <div><b>Tous les jours</b><span>Une publication à haute fréquence, sans pause.</span></div>
-          <div><b>La masse, pas la chance</b><span>On n'attend pas le clip miracle, on occupe le terrain.</span></div>
+          <div><b>Des comptes dédiés</b><span>Ouverts et gérés pour ton contenu uniquement.</span></div>
+          <div><b>Tous les jours</b><span>Une publication régulière, sans pause.</span></div>
+          <div><b>La régularité, pas la chance</b><span>On n'attend pas le clip miracle, on occupe le terrain.</span></div>
         </div>
       </div>
     </div>
@@ -163,18 +219,11 @@
         </details>
         <details>
           <summary>Combien de clips par jour ?</summary>
-          <p>Autant que nécessaire. On adapte la fréquence et le nombre de comptes à la quantité de contenu que tu produis et à tes objectifs. Choisis ton volume :</p>
-          <div class="gauge">
-            <div class="gauge-value"><output id="clipsOut" for="clipsRange">30</output><span>clips par jour</span></div>
-            <input type="range" id="clipsRange" min="0" max="500" step="5" value="30" aria-label="Nombre de clips par jour">
-            <div class="gauge-scale"><span>0</span><span>250</span><span>500</span></div>
-            <p class="gauge-month">Soit environ <strong id="clipsMonth">900</strong> clips par mois.</p>
-            <a id="clipsCta" href="mailto:contact@mpwclip.com?subject=Essai%20clipping%20-%2030%20clips%20par%20jour" class="btn btn-primary btn-small">Demander ce volume</a>
-          </div>
+          <p>Selon ton offre : 1, 2 ou 3 clips par jour. Pendant l'essai gratuit, on te livre 2 à 3 clips par jour pour que tu voies le résultat.</p>
         </details>
         <details>
           <summary>Comment êtes-vous payés ?</summary>
-          <p>En deux parties. Un forfait fixe, qui couvre la production de tes clips, et une part à la performance, calculée sur les vues réellement générées. Les vues sont publiques : tu peux vérifier chaque chiffre toi-même. Le tout est plafonné chaque mois et écrit noir sur blanc dans le contrat, donc tu connais à l'avance le maximum que tu peux payer.</p>
+          <p>Un abonnement mensuel, selon l'offre choisie : <strong>50 €</strong> (1 clip par jour), <strong>90 €</strong> (2 clips par jour) ou <strong>120 €</strong> (3 clips par jour). Pas de frais cachés, sans engagement : tu arrêtes quand tu veux.</p>
         </details>
         <details>
           <summary>Comment se passe l'essai ?</summary>
@@ -210,22 +259,6 @@
 
 <script>
 
-  // Jauge du nombre de clips par jour
-  (function () {
-    var range = document.getElementById('clipsRange');
-    var out = document.getElementById('clipsOut');
-    var month = document.getElementById('clipsMonth');
-    var cta = document.getElementById('clipsCta');
-    function update() {
-      var n = Number(range.value);
-      out.textContent = n;
-      month.textContent = (n * 30).toLocaleString('fr-FR');
-      range.style.setProperty('--fill', (n / Number(range.max) * 100) + '%');
-      cta.href = 'mailto:contact@mpwclip.com?subject=' + encodeURIComponent('Essai clipping - ' + n + ' clips par jour');
-    }
-    range.addEventListener('input', update);
-    update();
-  })();
 
   // Jauge du nombre de comptes dédiés
   (function () {
